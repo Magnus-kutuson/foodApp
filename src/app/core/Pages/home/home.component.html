@@ -5,3 +5,14 @@
         <span class="logo-3">Blog</span>
     </div>
 </header>
+
+<main *ngIf="foodPosts$ | async as foodPosts">
+
+    <div class="foodpost-container" *ngFor="let foodPost of foodPosts.items">
+        <img [src]="foodPost.fields.featuredImage.fields.file.url" alt="" class="foodpost-image">
+        <h2>{{ foodPost.fields.title }}</h2>
+        <p class="summary">{{ foodPost.fields.summary }}</p>
+        <p class="author">{{ foodPost.fields.author }}</p>
+        <a [routerLink]="['/post', foodPost.sys.id]" >Read more</a>
+    </div>
+</main>

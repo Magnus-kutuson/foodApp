@@ -34,3 +34,28 @@ header div span{
     letter-spacing: 20px;
     color: #aaa;
 }
+
+.foodpost-container{
+    max-width: 600px;
+    margin:  0 auto;
+    margin-bottom: 150px;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+.foodpost-container img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+h2, .summary, .author{
+    margin-bottom: 20px;
+}
+
+.foodpost-container a{
+    text-decoration: none;
+    color: #353535;
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #353535;
+    display: inline-block;
+}
