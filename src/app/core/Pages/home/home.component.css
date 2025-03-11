@@ -20,6 +20,9 @@ header div span{
     display: block;
     text-align: center;
 }
+.logo-1{
+    color: #aaa;
+}
 
 .logo-2{
     font-size: 50px;
@@ -29,4 +32,5 @@ header div span{
 
 .logo-3{
     letter-spacing: 20px;
+    color: #aaa;
 }
