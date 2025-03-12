@@ -1,1 +1,12 @@
-<p>post works!</p>
+<main *ngIf="foodPost$ | async as foodPost">
+  <div class="post-container">
+   
+    <img [src]="foodPost.fields.featuredImage.fields.file.url" alt="">
+    <h2>{{ foodPost.fields.title }}</h2>
+    <div class="post-info">
+        <p class="author">{{foodPost.fields.author}}</p>
+        <p class="date">{{foodPost.fields.time}}</p>
+    </div>
+    <p class="content">{{foodPost.fields.content}}</p>
+  </div>
+</main>
