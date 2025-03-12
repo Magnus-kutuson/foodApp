@@ -19,6 +19,7 @@ export class ContentfulService {
     return from(promise);
   }
 
+  
   getEntry(id: string) {
     const promise = this.client.getEntry(id);
     return from(promise);

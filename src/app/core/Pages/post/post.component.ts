@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './post.component.css'
 })
 export class PostComponent {
+  
+  
+  constructor() { }
+
 
 }
+
