@@ -1,6 +1,5 @@
 <main *ngIf="foodPost$ | async as foodPost">
   <div class="post-container">
-   
     <img [src]="foodPost.fields.featuredImage.fields.file.url" alt="">
     <h2>{{ foodPost.fields.title }}</h2>
     <div class="post-info">
